@@ -51,11 +51,14 @@ Weather Data: Corresponding daily weather data (temperature, humidity, wind, etc
         - Parameters include seasonal order (P, D, Q, s)
       🔸 SARIMAX
         - SARIMA + eXogenous variables
+        - Split the data chronologically to avoid data miss
         - Performed best among statistical models
       🔸 LSTM (Long Short-Term Memory)
-        - Sequence-based RNN model used to handle long-term dependencies
+        - Sequence-based model used to handle long-term dependencies
         - Trained on scaled data with 30-step time windows
-
+      🔸 DNN (Deep Neural Network)
+        - Sequence-based RNN model used to handle long-term dependencies
+        - Trained the model with DNN architecture
 
 ## 📈 Evaluation Metrics
     Each model was evaluated using:
@@ -68,43 +71,42 @@ Weather Data: Corresponding daily weather data (temperature, humidity, wind, etc
     Deep Learning: DNN
 
 ## 📁 Repository Contents
-File
-Description
-Energy_Final.ipynb
-  - Preprocessing of electricity data
-Weather_Final.ipynb
-  - Weather dataset cleaning and encoding
-Final_Data.ipynb
-  - Merging energy & weather data
-PCA.ipynb
-  - PCA for dimensionality reduction
-ARIMA.ipynb
-  - ARIMA model implementation
-SARIMA.ipynb
-  - SARIMA model implementation
-SARIMAX.ipynb
-  - SARIMAX model using weather variables
-LSTM.ipynb
-  - LSTM deep learning model
-DNN
-  - Deep Neural Network Approach 
-
-Electricity_Prediction_Presentation.pptx
-  - Final presentation slides
-
-Electricity_Dissertation_Report.pdf
-- Final project dissertation report
-
-
+    File
+    Description
+    Energy_Final.ipynb
+      - Preprocessing of electricity data
+    Weather_Final.ipynb
+      - Weather dataset cleaning and encoding
+    Final_Data.ipynb
+      - Merging energy & weather data
+    PCA.ipynb
+      - PCA for dimensionality reduction
+    ARIMA.ipynb
+      - ARIMA model implementation
+    SARIMA.ipynb
+      - SARIMA model implementation
+    SARIMAX.ipynb
+      - SARIMAX model using weather variables
+    LSTM.ipynb
+      - LSTM deep learning model
+    DNN
+      - Deep Neural Network Approach 
+    
+    Electricity_Prediction_Presentation.pptx
+      - Final presentation slides
+    
+    Electricity_Dissertation_Report.pdf
+    - Final project dissertation report
+    
+    
 ## 🎓 Author
 Bolem Siva Rama Lalitha Lakshmi
-MSc Data Science
-GITAM University
+MSc Data Science, GITAM University
 
 
 ## 💡 Future Scope
-  - Explore hybrid models like ARIMA-LSTM
-  - Include more external variables like demand, pricing, or holidays
-  - Deploy models using web dashboards (Streamlit / Flask)
-  - Use attention-based models for better long-term predictions
-  - Implementing lag analysis
+      - Explore hybrid models like ARIMA-LSTM
+      - Include more external variables like demand, pricing, or holidays
+      - Deploy models using web dashboards (Streamlit / Flask)
+      - Use attention-based models for better long-term predictions
+      - Implementing lag analysis
